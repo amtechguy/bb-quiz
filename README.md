@@ -2,7 +2,7 @@
 
 > A fully **offline**, terminal-based quiz app for **AWS Cloud Practitioner (CLF-C02)** exam preparation.  
 > Beautiful CLI experience powered by Python + [Rich](https://github.com/Textualize/rich).  
-> **1,989+ practice questions** · **22 topic banks** · **Exam Simulation Mode** · **Streak tracking**
+> **2,000+ practice questions** · **22 topic banks** · **Exam Simulation Mode** · **Streak tracking**
 
 ---
 
@@ -407,6 +407,37 @@ Every topic bank in bb-quiz links to these when you select it:
 
 ---
 
+## 🔄 Keeping bb-quiz Updated
+
+> **New questions drop regularly — no fixed schedule. Update whenever you can for the freshest content!**
+
+We actively add new practice questions to this repo. To make sure you always have the latest:
+
+### If you installed via terminal (git clone)
+```bash
+cd bb-quiz
+git pull                     # download latest questions
+python3 group_by_topic.py   # re-sort into topic banks
+bash install.sh              # rebuild and reinstall
+```
+
+### If you installed manually (drag & drop on GitHub)
+1. Go to [github.com/amtechguy/bb-quiz](https://github.com/amtechguy/bb-quiz)
+2. Download the latest `banks/` folder
+3. Replace your local `banks/` folder with it
+4. Run `python3 group_by_topic.py` then `bash install.sh`
+
+### On Windows
+```powershell
+cd bb-quiz
+git pull
+python main.py   # no rebuild needed on Windows
+```
+
+> 💡 **Tip:** Set a reminder to check for updates every week or so — the more questions you practice, the better prepared you'll be!
+
+---
+
 ## 🤝 Contributing
 
 Questions, improvements, and new question banks are welcome!
@@ -425,3 +456,5 @@ MIT License — free to use, share, and modify.
 ---
 
 *Built for students, by students. Good luck on your AWS exam! ☁️*
+
+*Made with ❤️ by [amtechguy](https://github.com/amtechguy)*
